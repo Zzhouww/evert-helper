@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ArrowLeft, Loader2, Sparkles } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { button } from '@/components/ui/button';
+import { card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
+import { label } from '@/components/ui/label';
 import { getEventById, createEventRecord } from '@/db/api';
 import { summarizeEventRecord } from '@/lib/ai';
 import { useToast } from '@/hooks/use-toast';
