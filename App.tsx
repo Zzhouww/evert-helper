@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, RequireAuth } from 'miaoda-auth-react';
 import { supabase } from './db/supabase.ts';
-import { Toaster } from '@/components/ui/toaster';
+import { toaster } from '@/components/ui/toaster';
 import routes from './routes';
 
 const App: React.FC = () => {
