@@ -1,10 +1,14 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ArrowLeft, Loader2, Sparkles } from 'lucide-react';
-import { Button } from "../components/ui/button";
-import { card, CardContent, CardHeader, CardTitle } from "@/components/ui/card.tsx";
-import { textarea } from '@/components/ui/textarea';
-import { label } from "@/components/ui/label.tsx";
+// 建议统一使用 @ 别名，且注意组件名是大写 Button
+import { Button } from "@/components/ui/button";
+// 修正：card -> Card，去掉 .tsx
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+// 修正：textarea -> Textarea
+import { Textarea } from "@/components/ui/textarea";
+// 修正：label -> Label，去掉 .tsx
+import { Label } from "@/components/ui/label";
 import { getEventById, createEventRecord } from '@/db/api';
 import { summarizeEventRecord } from '@/lib/ai';
 import { useToast } from '@/hooks/use-toast';
