@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ArrowLeft, Loader2, Sparkles } from 'lucide-react';
-import { button }from "@/components/ui/button.tsx";
+import { Button } from "../components/ui/button";
 import { card, CardContent, CardHeader, CardTitle } from "@/components/ui/card.tsx";
 import { textarea } from '@/components/ui/textarea';
 import { label } from "@/components/ui/label.tsx";
